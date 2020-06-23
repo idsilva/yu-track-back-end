@@ -11,11 +11,4 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use('/', routes);
 
-
-
-
-
-
-const server = app.listen(80, () => {
-  console.log(`Express is running on port ${server.address().port}`);
-});
+module.exports = app;
