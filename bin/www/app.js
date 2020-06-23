@@ -13,13 +13,12 @@ var http = require('http');
 
 //var port = normalizePort(process.env.PORT || '8080');
 var port = normalizePort('80');
-app.set('port', port);
+//app.set('port', port);
 
 /**
  * Listen on provided port, on all network interfaces.
  */
-
-const server = app.listen(() => {
+const server = app.listen(port, () => {
   console.log(`Express is running on port ${server.address().port}`);
 });
 /* 
